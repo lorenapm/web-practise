@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+* {
+  outline: 3px solid red;
+}
+
 :root {
   --padding-container: 80px 0;
   --color-primary: #f77062;
@@ -11,4 +15,45 @@
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+.hero {
+  --padding-container: 0;
+  height: 100vh;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.hero__main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.hero__img {
+  width: 45%;
+  text-align: center;
+  margin: 0;
+}
+.hero__picture {
+  max-width: 80%;
+}
+.hero__text {
+  width: 45%;
+  color: #ffff;
+}
+.hero__title {
+  font-size: 4rem;
+}
+.hero__copy {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
