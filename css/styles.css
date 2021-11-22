@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 * {
-  outline: 3px solid red;
+  /* outline: 3px solid red; */
 }
 
 :root {
@@ -57,7 +57,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.about__container {
+.about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,4 +93,50 @@ body {
   border-radius: 30px;
   color: #fff;
   text-decoration: none;
+}
+.portfolio {
+  background: var(--color-bg);
+}
+.portfolio__card {
+  width: 27%;
+  background: #fff;
+  height: auto;
+  box-shadow: var(--box-sadow);
+  border-radius: 10px;
+}
+.portfolio__picture {
+  width: 100%;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+.portfolio__text {
+  padding: 30px 20px 40px;
+}
+.portfolio__title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-secondary);
+  margin: 0;
+}
+.portfolio__paragraph {
+  font-weight: 300;
+  margin: 30px 0;
+}
+.portfolio__cta {
+  display: block;
+  background: var(--color-secondary);
+  padding: 15px 0;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+.portfolio__cards {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
