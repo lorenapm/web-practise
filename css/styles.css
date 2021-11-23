@@ -231,3 +231,64 @@ body {
 .svg-inline--fa {
   font-size: 3rem;
 }
+@media screen and (max-width: 800px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    --padding-container: 40px 0;
+  }
+  .hero__main {
+    justify-content: center;
+  }
+  .hero__img {
+    width: 60%;
+    max-width: 85%;
+    margin-bottom: 30px;
+  }
+  .hero__text {
+    width: 100%;
+  }
+  .hero__title {
+    font-size: 3.5rem;
+  }
+  .about__text {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    --align-title: center;
+  }
+  .about__paragraph {
+    text-align: left;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .portfolio__card {
+    width: 45%;
+    margin-bottom: 35px;
+  }
+  .gallery__picture {
+    width: 45%;
+  }
+  .languages__container {
+    justify-content: space-between;
+  }
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+  /* Otra forma de poner la imagen primero
+  .footer__img{
+      order: -1;
+  } */
+  .footer__img {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .footer__picture {
+    width: 100%;
+  }
+  .footer__texts {
+    width: 100%;
+  }
+}
